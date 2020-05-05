@@ -8,7 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'add-student' },
+  { path: '', pathMatch: 'full', redirectTo: 'register' },
   { path: 'add-student', component: AddStudentComponent },
   { path: 'edit-student/:id', component: EditStudentComponent },
   { path: 'student-list', component: StudentListComponent },

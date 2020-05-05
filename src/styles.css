@@ -8,7 +8,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-nav-list .mat-list-item{font-size:15px;}
 .nav-tool-items{display:inline-block;margin-right:13px;}
 .user-profile{margin-left:15px;cursor:pointer;}
-.hamburger{visibility:hidden !important;}
 .mat-sidenav,.mat-sidenav-content{padding:15px;}
 .mat-list-item.active{background:rgba(0, 0, 0, .04);}
 .mat-sidenav-content{padding:25px 40px 0;}

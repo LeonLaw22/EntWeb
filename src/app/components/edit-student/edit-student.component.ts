@@ -25,7 +25,7 @@ export class EditStudentComponent implements OnInit {
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
   studentForm: FormGroup;
   subjectArray: Subject[] = [];
-  SectioinArray: any = ['A', 'B', 'C', 'D', 'E'];
+  SectioinArray: any = ['Applied Social Studies', 'Business School', 'Computing Science & Digital Media', 'Creative & Cultural Business', 'Engineering','School of Art','Health Sciences','Law School','Pharmacy'];
 
   ngOnInit() {
     this.updateBookForm();
@@ -106,7 +106,7 @@ export class EditStudentComponent implements OnInit {
     var id = this.actRoute.snapshot.paramMap.get('id');
     if (window.confirm('Are you sure you want to update?')) {
       this.studentApi.UpdateStudent(id, this.studentForm.value).subscribe( res => {
-        this.ngZone.run(() => this.router.navigateByUrl('/students-list'))
+        this.ngZone.run(() => this.router.navigateByUrl('/student-list'))
       });
     }
   }

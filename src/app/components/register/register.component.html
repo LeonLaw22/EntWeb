@@ -1,6 +1,10 @@
+<div class="title-group">
+    <h1 class="mat-h1">Register</h1>
+    <mat-divider fxFlex="1 0"></mat-divider>
+  </div>
+
 <div class="auth-wrapper">
     <form class="form-register" [formGroup]="RegisterForm" (ngSubmit)="registerUser()">
-        <h3 class="h3 mb-3 font-weight-normal text-center">Please sign up</h3>
         <div class="form-group">
             <label>Name</label>
             <input type="text" class="form-control" formControlName="name" placeholder="Enter name" required>
